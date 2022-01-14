@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="style.css" />
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice </title>
+    
+</head>
+
+    <body>
+        <h1> <br><strong>Calculatrice</strong></h1>
+
+      <div class="Container">
+          <form name="form">
+            <input class="textview" name="textview">
+          </form>
+      
+      <div class="buttons">
+        <table class="centerTable">
+            <tr>
+                <th><button data-key=8 class="button" onclick="clean()">C</button></th> 
+                <th><button data-key=53 class="button" onclick="insert('(')">(</button></th> 
+                 <th><button data-key=219 class="button" onclick="insert(')')">)</button></th>
+                 <th><button data-key=192 class="button" onclick="insert('%')">%</button></th>
+             </tr>
+            <tr>
+                <th><button data-key=57 class="button" onclick="insert(9)">9</button></th> 
+                <th><button data-key=56 class="button" onclick="insert(8)">8</button></th> 
+                 <th><button data-key=55 class="button" onclick="insert(7)">7</button></th>
+                 <th><button data-key=191 class="button" onclick="insert('/')">/</button></th>
+            </tr>
+       
+            <tr>
+                <th><button data-key=54 class="button" onclick="insert(6)">6</button></th> 
+                <th><button data-key=53 class="button" onclick="insert(5)">5</button></th> 
+                 <th><button data-key=52 class="button" onclick="insert(4)">4</button></th>
+                 <th><button data-key=220 class="button" onclick="insert('*')">*</button></th>
+            </tr>
+            <tr>
+                <th><button data-key=51 class="button" onclick="insert(3)">3</button></th> 
+                <th><button data-key=50 class="button" onclick="insert(2)">2</button></th> 
+                 <th><button data-key=49 class="button" onclick="insert(1)">1</button></th>
+                 <th><button data-key=187 class="button" onclick="insert('+')">+</button></th>
+            </tr>
+            <tr>
+                <th><button data-key=48 class="button" onclick="insert(0)">0</button></th> 
+                <th><button data-key=190 class="button" onclick="insert('.')">.</button></th> 
+                <th><button data-key=187 class="button" onclick="equal()">=</button></th>
+                 <th><button data-key=54 class="button" onclick="insert('-')">-</button></th>
+                 
+            </tr>
+        
+        </table>
+         </div>
+
+       
+        
+       </div>  
+      <script src="./script.js"></script> 
+    </body>
+
+</html>
